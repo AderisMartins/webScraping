@@ -1,0 +1,22 @@
+<form class="form">
+    <h1>Deletando conta</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="account.email" disabled required minlength="5" name="email" matInput placeholder="Ex. email.teste@gmail.com">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Senha</mat-label>
+        <input [(ngModel)]="account.password" disabled required minlength="5" name="password" matInput>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Rede social</mat-label>
+        <input [(ngModel)]="account.social_id" disabled required minlength="1" name="social_id" matInput>
+    </mat-form-field>
+
+    <div>
+        <button class="mat-elevation-z8" (click)="delete()" mat-stroked-button color="accent">Deletar</button>
+        <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+</form>

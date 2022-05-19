@@ -1,0 +1,25 @@
+<form class="form">
+    <h1>Adicionando nova conta</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="account.email" [formControl]="email" required minlength="5" name="email" matInput placeholder="Ex. email.teste@gmail.com">
+        <mat-error *ngIf="email.invalid">{{ errorValidEmail() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Senha</mat-label>
+        <input [(ngModel)]="account.password" [formControl]="password" required minlength="5" name="password" matInput>
+        <mat-error *ngIf="password.invalid">{{ errorValidPassword() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+        <mat-label>Rede social</mat-label>
+        <input [(ngModel)]="account.social_id" [formControl]="social_id" required minlength="1" name="social_id" matInput>
+        <mat-error *ngIf="social_id.invalid">{{ errorValidSocialId() }}</mat-error>
+    </mat-form-field>
+
+    <div>
+        <button class="mat-elevation-z8" (click)="create()" [disabled]="errorValidEmail() || errorValidPassword() || errorValidSocialId()" mat-stroked-button color="accent">Adicionar</button>
+        <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+</form>
