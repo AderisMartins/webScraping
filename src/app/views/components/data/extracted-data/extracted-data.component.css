@@ -1,0 +1,35 @@
+.title h1 {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+}
+
+button {
+    width: 50%;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.action {
+    margin: 1rem auto;
+}
+
+#edit {
+    color: rgb(31, 134, 230);
+}
+
+#delete {
+    color: red;
+}

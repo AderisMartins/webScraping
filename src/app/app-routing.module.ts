@@ -4,6 +4,7 @@ import { AccountCreateComponent } from './views/components/account/account-creat
 import { AccountDeleteComponent } from './views/components/account/account-delete/account-delete.component';
 import { AccountReadComponent } from './views/components/account/account-read/account-read.component';
 import { AccountUpdateComponent } from './views/components/account/account-update/account-update.component';
+import { ExtractedDataComponent } from './views/components/data/extracted-data/extracted-data.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { SearchAccountComponent } from './views/components/search/search-account/search-account.component';
 import { SocialMediaCreateComponent } from './views/components/social/social-media-create/social-media-create.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'search',
     component: SearchAccountComponent
+  },
+  {
+    path: 'extracted-data',
+    component: ExtractedDataComponent
   }
 ];
 

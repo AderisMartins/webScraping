@@ -4,6 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Account } from '../models/account';
+import { DataInsta } from '../models/data-insta';
 import { Search } from '../models/search'; // remover depois criar um proprio
 
 @Injectable({
@@ -45,6 +46,11 @@ export class AccountService {
   buscar():Observable<Search[]> { //remover depois criar um proprio
     const url = this.baseUrl + "/search";
     return this.http.get<Search[]>(url);
+  }
+
+  dataInsta():Observable<DataInsta[]> { //remover depois criar um proprio
+    const url = this.baseUrl + "/extracted-data";
+    return this.http.get<DataInsta[]>(url);
   }
 
   message(msg: String): void {

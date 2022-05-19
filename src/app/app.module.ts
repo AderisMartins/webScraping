@@ -36,6 +36,7 @@ import { AccountCreateComponent } from './views/components/account/account-creat
 import { AccountUpdateComponent } from './views/components/account/account-update/account-update.component';
 import { AccountDeleteComponent } from './views/components/account/account-delete/account-delete.component';
 import { SearchAccountComponent } from './views/components/search/search-account/search-account.component';
+import { ExtractedDataComponent } from './views/components/data/extracted-data/extracted-data.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { SearchAccountComponent } from './views/components/search/search-account
     AccountCreateComponent,
     AccountUpdateComponent,
     AccountDeleteComponent,
-    SearchAccountComponent
+    SearchAccountComponent,
+    ExtractedDataComponent
   ],
   imports: [
     BrowserModule,
