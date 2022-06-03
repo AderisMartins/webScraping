@@ -16,6 +16,27 @@
         <mat-error *ngIf="perfil.invalid">{{ errorValidPerfil() }}</mat-error>
     </mat-form-field>
 
+    <input required type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+
+    <div class="file-upload">
+
+        {{fileName || "Nenhum arquivo carregado ainda."}}
+
+        <button mat-button color="warn" class="upload-btn" (click)="fileUpload.click()">
+            <mat-icon>attach_file</mat-icon>
+        </button>
+    </div>
+
+    <div class="progress">
+
+        <mat-progress-bar class="progress-bar" mode="determinate" [value]="uploadProgress" *ngIf="uploadProgress">
+
+        </mat-progress-bar>
+
+        <mat-icon class="cancel-upload" (click)="cancelUpload()" *ngIf="uploadProgress">delete_forever</mat-icon>
+
+    </div>
+
     <div>
         <button class="mat-elevation-z8" (click)="buscar()" [disabled]="errorValidPerfil()" mat-stroked-button color="accent">Buscar</button>
         <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">Cancelar</button>

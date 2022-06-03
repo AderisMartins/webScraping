@@ -16,6 +16,10 @@ h1 {
     padding-top: 2rem;
 }
 
+.file-input {
+    display: none;
+}
+
 div {
     display: flex;
     justify-content: space-around;
