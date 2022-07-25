@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://bot-apii.herokuapp.com'
+  baseUrl: 'http://localhost:8080'
+  //baseUrl: 'https://bot-apii.herokuapp.com'
 };
 
 /*

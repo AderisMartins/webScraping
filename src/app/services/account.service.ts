@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Account } from '../models/account';
 import { DataInsta } from '../models/data-insta';
-import { Search } from '../models/search'; // remover depois criar um proprio
+
 
 @Injectable({
   providedIn: 'root'
@@ -41,11 +41,6 @@ export class AccountService {
   delete(id: any):Observable<void> {
     const url = this.baseUrl + "/account/delete/" + id;
     return this.http.delete<void>(url);
-  }
-
-  buscar():Observable<Search[]> { //remover depois criar um proprio
-    const url = this.baseUrl + "/search";
-    return this.http.get<Search[]>(url);
   }
 
   dataInsta():Observable<DataInsta[]> { //remover depois criar um proprio

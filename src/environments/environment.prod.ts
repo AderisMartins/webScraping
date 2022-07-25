@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
-  baseUrl: 'https://bot-apii.herokuapp.com'
+  production: false
+  //baseUrl: 'https://bot-apii.herokuapp.com'
 };

@@ -5,7 +5,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 import { Router } from '@angular/router';
 import { finalize, Subscription } from 'rxjs';
 import { Search } from 'src/app/models/search';
-import { AccountService } from 'src/app/services/account.service'; //remover depois e criar um proprio para esse componente
+import { SearchService } from 'src/app/services/search.service';
 
 @Component({
   selector: 'app-search-account',
@@ -21,20 +21,20 @@ export class SearchAccountComponent implements OnInit {
   uploadProgress!: number;
   uploadSub!: Subscription;
 
-  myControl = new FormControl();
+  rede_social = new FormControl();
   options: string[] = ['Instagram', 'Facebook'];
 
   search: Search = {
     rede_social: '',
     perfil: '',
-    file: ''
+    //file: ''
   }
   perfil = new FormControl('', [Validators.minLength(5)])
 
   constructor(
     public dialog: MatDialog,
     private router: Router,
-    private service: AccountService,
+    private service: SearchService,
     private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -45,9 +45,11 @@ export class SearchAccountComponent implements OnInit {
   }
 
   buscar(): void {
-    this.service.buscar().subscribe((resposta) => {
+    console.log(this.options)
+    console.log(this.search)
+    this.service.buscar(this.search).subscribe((resposta) => {
       this.router.navigate(['account'])
-      this.service.message('Conta adicionada com sucesso!')
+      this.service.message('Feita a busca com sucesso!')
     })
   }
 
