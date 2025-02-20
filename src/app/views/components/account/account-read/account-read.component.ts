@@ -13,7 +13,7 @@ import { AccountService } from 'src/app/services/account.service';
 export class AccountReadComponent implements AfterViewInit {
   account: Account[] = [];
 
-  displayedColumns: string[] = ['id', 'email', 'password', 'social_id', 'action'];
+  displayedColumns: string[] = ['id', 'email', 'password', 'social_media', 'action'];
   dataSource = new MatTableDataSource<Account>(this.account);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

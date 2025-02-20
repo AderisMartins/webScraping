@@ -15,7 +15,7 @@ export class AccountDeleteComponent implements OnInit {
   account: Account = {
     email: '',
     password: '',
-    social_id: ''
+    social_media: ''
   }
 
   constructor(

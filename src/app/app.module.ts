@@ -29,11 +29,11 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
 import { NavComponent } from './views/components/template/nav/nav.component';
-import { HomeComponent } from './views/components/home/home.component';
-import { SocialMediaReadComponent } from './views/components/social/social-media-read/social-media-read.component';
-import { SocialMediaCreateComponent } from './views/components/social/social-media-create/social-media-create.component';
-import { SocialMediaUpdateComponent } from './views/components/social/social-media-update/social-media-update.component';
-import { SocialMediaDeleteComponent } from './views/components/social/social-media-delete/social-media-delete.component';
+//import { HomeComponent } from './views/components/home/home.component';
+//import { SocialMediaReadComponent } from './views/components/social/social-media-read/social-media-read.component';
+//import { SocialMediaCreateComponent } from './views/components/social/social-media-create/social-media-create.component';
+//import { SocialMediaUpdateComponent } from './views/components/social/social-media-update/social-media-update.component';
+//import { SocialMediaDeleteComponent } from './views/components/social/social-media-delete/social-media-delete.component';
 import { AccountReadComponent } from './views/components/account/account-read/account-read.component';
 import { AccountCreateComponent } from './views/components/account/account-create/account-create.component';
 import { AccountUpdateComponent } from './views/components/account/account-update/account-update.component';
@@ -48,11 +48,11 @@ import { ExtractedDataComponent } from './views/components/data/extracted-data/e
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent,
-    SocialMediaReadComponent,
-    SocialMediaCreateComponent,
-    SocialMediaUpdateComponent,
-    SocialMediaDeleteComponent,
+    //HomeComponent,
+    //SocialMediaReadComponent,
+    //SocialMediaCreateComponent,
+    //SocialMediaUpdateComponent,
+    //SocialMediaDeleteComponent,
     AccountReadComponent,
     AccountCreateComponent,
     AccountUpdateComponent,
@@ -65,9 +65,9 @@ import { ExtractedDataComponent } from './views/components/data/extracted-data/e
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    //BrowserModule,
+    //AppRoutingModule,
+    //BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,

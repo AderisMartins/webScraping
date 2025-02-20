@@ -14,7 +14,7 @@ export class AccountCreateComponent implements OnInit {
   account: Account = {
     email: '',
     password: '',
-    social_id: ''
+    social_media: ''
   }
   email = new FormControl('', [Validators.minLength(5)])
   password = new FormControl('', [Validators.minLength(5)])

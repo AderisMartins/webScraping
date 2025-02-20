@@ -14,7 +14,7 @@
 
     <mat-form-field class="full-width">
         <mat-label>Rede social</mat-label>
-        <input [(ngModel)]="account.social_id" [formControl]="social_id" required minlength="1" name="social_id" matInput>
+        <input [(ngModel)]="account.social_media" [formControl]="social_id" required minlength="1" name="social_id" matInput>
         <mat-error *ngIf="social_id.invalid">{{ errorValidSocialId() }}</mat-error>
     </mat-form-field>
 

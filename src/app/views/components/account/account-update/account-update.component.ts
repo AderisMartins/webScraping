@@ -17,7 +17,7 @@ export class AccountUpdateComponent implements OnInit {
     id: '',
     email: '',
     password: '',
-    social_id: ''
+    social_media: ''
   }
   email = new FormControl('', [Validators.minLength(5)])
   password = new FormControl('', [Validators.minLength(3)])

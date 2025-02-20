@@ -22,7 +22,7 @@ export class SearchAccountComponent implements OnInit {
   uploadSub!: Subscription;
 
   rede_social = new FormControl();
-  options: string[] = ['Instagram', 'Facebook'];
+  options: string[] = ['Instagram', 'Facebook', 'LinkedIn'];
 
   search: Search = {
     rede_social: '',
